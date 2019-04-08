@@ -1,0 +1,39 @@
+/*______ Main Fonts ______*/
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-Light.woff2'), url('../fonts/Cormorant/Cormorant-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-Regular.woff2'), url('../fonts/Cormorant/Cormorant-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant/Cormorant-SemiBold.woff2'), url('../fonts/Cormorant/Cormorant-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Cormorant';
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 600;
+}

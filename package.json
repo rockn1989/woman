@@ -1,0 +1,21 @@
+{
+  "name": "woman",
+  "version": "1.0.0",
+  "description": "product landing",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "browsersync": "0.0.1-security",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rename": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rockn89",
+  "license": "ISC"
+}
