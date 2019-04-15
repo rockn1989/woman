@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const gcmq = require('gulp-group-css-media-queries');
+const svgstore = require('gulp-svgstore');
 
 /*______ Medua Queries ______*/
 
@@ -13,6 +14,17 @@ function Gcmq() {
 				.pipe(gulp.dest('./css'));
 }
 
+
+/*______ Svgstore ______*/
+
+function Svgstore () {
+	return gulp.src("img/icon-svg/*.svg")
+				.pipe(svgstore({
+					inlineSvg: true
+				}))
+				.pipe(rename("sprite-svg.svg"))
+				.pipe(gulp.dest("img/icon-svg/"))
+}
 
 /*______ Browser-Sync ______*/
 
@@ -31,3 +43,5 @@ function BroserSync() {
 };
 
 gulp.task('serve', BroserSync);
+
+gulp.task('svg', Svgstore);
